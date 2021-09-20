@@ -34,6 +34,41 @@ img{
 /* ====================
     common css ends
 ===================== */
+.heading h3{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--hcol);
+}
+.heading img{
+    margin-top: -10px;
+}
+
+.title{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--hcol);
+}
+
+.designation{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--cl1);
+}
+
+.card-text{
+    font-family: var(--pfont);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--pcol);
+    line-height: 18px;
+}
+
+/* ====================
+    heading css ends
+===================== */
 
 .navbar{
     background: rgba(53, 53, 53, 0.25);
@@ -323,4 +358,199 @@ img{
 /* ====================
     banner css ends
 ===================== */
+#about{
+    padding-top: 80px;
+    padding-bottom: 75px;
+}
+#about .about-video .overlay{
+    background: var(--over6);
+}
 
+#about .about-video .overlay i{
+    width: 48px;
+    height: 48px;
+    color: var(--hcol);
+    background: var(--brand);
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 26px;
+}
+
+#about .about-text p{
+    font-family: var(--pfont);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--pcol);
+    padding: 0 55px;
+}
+#about .about-text p:first-of-type{
+    padding-top: 15px;
+}
+#about .about-text p:last-of-type{
+    padding-top: 25px;
+}
+
+/* ====================
+    about css ends
+===================== */
+#gallery .gallery-bg{
+    background: url(../images/gallery-bg.jpg) no-repeat center / cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+#gallery .gallery-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#gallery .gallery-bg .gallery-item .gl-overlay{
+    background: var(--overred);
+    border: 5px solid rgba(255,255,255,0.5);
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+    top: -100%;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#gallery .gallery-bg .gallery-item:hover .gl-overlay{
+    top: 0;
+} 
+
+
+#gallery .gallery-bg .gallery-item:first-of-type{
+    margin-bottom: 30px;
+}
+
+#gallery .gallery-bg .gallery-item .gl-overlay i{
+    font-size: 30px;
+    color: #fff;
+}
+
+
+
+/* ====================
+    gallery css ends
+===================== */
+#team{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#team .team-item{
+    margin-right: 30px;
+    margin-top: 60px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-item:hover{
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+
+#team .gl-overlay{
+    background: var(--overred);
+    top: -100%;
+    left: 0;
+    border: 5px solid rgba(255,255,255,0.5);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-item:hover .gl-overlay{
+    top: 0;
+}
+
+#team .gl-overlay a{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#team .gl-overlay a:last-of-type{
+    margin-bottom: 0;
+}
+
+#team .team-item .card{
+    border-color: transparent;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-item:hover .card{
+    border-color: var(--membg);
+}
+
+#team .team-item .title{
+    margin-top: 20px;
+    margin-bottom: 10px !important;
+}
+
+#team .team-item .card-text{
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    padding: 15px 21px 20px;
+}
+
+#team .team-item:hover .card-text{
+    visibility: visible;
+    opacity: 1;
+}
+/* ====================
+    team css ends
+===================== */

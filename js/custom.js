@@ -4,4 +4,15 @@ $(document).ready(function(){
         arrows: false,
         dots: true,
     });
+
+
+    //about video popup
+    $('.venobox').venobox(); 
+
+    //team slider
+
+    $('.team-slider').slick({
+        slidesToShow: 4,
+        arrows: false,
+    });
 });
